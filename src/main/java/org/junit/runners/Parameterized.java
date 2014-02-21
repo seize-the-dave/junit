@@ -288,11 +288,6 @@ public class Parameterized extends Suite {
         protected Statement classBlock(RunNotifier notifier) {
             return childrenInvoker(notifier);
         }
-
-        @Override
-        protected Annotation[] getRunnerAnnotations() {
-            return new Annotation[0];
-        }
     }
 
     private static final List<Runner> NO_RUNNERS = Collections.<Runner>emptyList();
